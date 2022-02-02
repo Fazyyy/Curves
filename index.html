@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playing with curves</title>
+    <link
+      rel="preload"
+      as="style"
+      href="assets/styles.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="assets/styles.css" /></noscript>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+  </head>
+  <body>
+    <section class="red bubble">
+      <h1>Nice Curves</h1>
+      <p>
+        Quibusdam minus perspiciatis odit praesentium reiciendis animi eveniet
+        atque officiis vitae aspernatur maxime dolore temporibus facere unde
+        assumenda, sed officia modi voluptate ad cum, dolorum vel itaque!
+        Ratione, repudiandae impedit.
+      </p>
+    </section>
+    <section class="pink">
+      <h1>Nice Curves</h1>
+      <p>
+        Maiores reiciendis harum id quod quas quibusdam aperiam suscipit ratione
+        accusantium ipsa alias, sit repellendus eaque eum iure perferendis,
+        maxime, consectetur cupiditate? Doloribus aliquid voluptate id error ab
+        excepturi fugit!
+      </p>
+    </section>
+    <section class="dark">
+      <h1>Nice Curves</h1>
+      <p>
+        Iusto eaque excepturi molestias nostrum, eligendi facere perspiciatis
+        fuga ipsa dolores culpa, cupiditate, dolor quo enim. Assumenda
+        doloremque aperiam dignissimos dolore fuga, obcaecati itaque iure
+        deserunt cum nihil similique quisquam.
+      </p>
+
+      <div class="wave">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <section class="blue">
+      <div class="spacer-top layer1"></div>
+      <h1>Nice Curves</h1>
+      <p>
+        Alias iure non necessitatibus error animi natus perferendis voluptatem
+        iste hic quaerat sequi quidem amet ipsum, quo exercitationem, aperiam
+        enim est. Perferendis odit, eligendi numquam ullam tempora fugit.
+        Molestias, ratione.
+      </p>
+      <svg
+        id="visual"
+        viewBox="0 0 900 600"
+        width="900"
+        height="600"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <g transform="translate(507.484936125915 287.78483384002527)">
+          <path id="blob1"
+            d="M66.8 -86.1C86.9 -77.3 103.8 -58.3 104.1 -38.3C104.3 -18.4 87.8 2.4 85.1 32.9C82.4 63.5 93.5 103.7 81.6 141.5C69.8 179.3 34.9 214.7 -0.1 214.8C-35.1 214.9 -70.1 179.9 -98 147.3C-125.9 114.7 -146.7 84.5 -169.5 47.3C-192.4 10 -217.5 -34.4 -219 -83.9C-220.5 -133.4 -198.4 -188.1 -158 -190.3C-117.6 -192.5 -58.8 -142.2 -17.7 -117.8C23.3 -93.4 46.6 -94.8 66.8 -86.1"
+            fill="#BB004B"
+          ></path>
+        </g>
+
+        <g transform="translate(467.8312667476089 357.06885380357176)" style="visibility: hidden;">
+          <path id="blob2"
+            d="M139.3 -208.9C161 -175.9 145.6 -109.1 152.1 -57C158.5 -4.9 186.7 32.4 182.6 63.8C178.6 95.1 142.2 120.4 106.4 121.2C70.5 122.1 35.3 98.5 2.4 95.2C-30.4 91.8 -60.7 108.6 -105.3 110.6C-149.8 112.5 -208.5 99.7 -217.4 71C-226.4 42.2 -185.5 -2.4 -157.5 -39.6C-129.5 -76.9 -114.4 -106.8 -90.3 -139C-66.2 -171.1 -33.1 -205.6 12.8 -223.2C58.8 -240.9 117.6 -241.8 139.3 -208.9"
+            fill="#BB004B"
+          ></path>
+        </g>
+      </svg>
+      <div class="spacer-bottom layer2 flip"></div>
+    </section>
+    <section class="dark">
+      <h1>Nice Curves</h1>
+      <p>
+        Dolorum iusto omnis quam aliquam ducimus voluptatibus sequi et deserunt
+        alias, magni excepturi hic nisi amet quisquam illo labore quibusdam
+        cumque! Modi culpa rem excepturi libero, atque ratione alias. Dolorum!
+      </p>
+    </section>
+
+    <script>
+      const tween = KUTE.fromTo(
+        '#blob1',
+        { path: '#blob1' },
+        { path: '#blob2' },
+        { repeat: 999, duration: 3000, yoyo: true }
+      )
+
+      tween.start()
+    </script>
+
+  </body>
+</html>
